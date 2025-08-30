@@ -13,6 +13,9 @@ import {
   updateChapterTranslationState,
   getTranslation,
 } from '@database/queries/ChapterQueries';
+// ...otros imports
+import { smartTranslateText } from './MlKitTranslationService';
+import { getTranslationSettings } from '@utils/TranslationSettings';
 
 export interface TranslationResponse {
   content: string;
