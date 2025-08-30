@@ -58,6 +58,19 @@ const SettingsScreen = ({ navigation }: SettingsScreenProps) => {
           }
           theme={theme}
         />
+        {/* === ML Kit Translation Settings entry added below === */}
+        <List.Item
+          title="Traducción automática (ML Kit)"
+          icon="translate"
+          description="Configura el idioma y descarga modelos"
+          onPress={() =>
+            navigation.navigate('SettingsStack', {
+              screen: 'TranslationLanguageScreen',
+            })
+          }
+          theme={theme}
+        />
+        {/* === End ML Kit Translation entry === */}
         <List.Item
           title="Repositories"
           icon="github"
