@@ -3,6 +3,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import TranslationsSettings from '@screens/settings/TranslationsSettings';
 import TranslationListScreen from '@screens/settings/TranslationListScreen';
 import SettingsTranslationScreen from '@screens/settings/SettingsTranslationScreen';
+import TranslationLanguageScreen from '@screens/settings/TranslationLanguageScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -20,6 +22,11 @@ const SettingsNavigator = () => {
       <Stack.Screen
         name="SettingsTranslation"
         component={SettingsTranslationScreen}
+      />
+ <Stack.Screen
+        name="TranslationLanguageScreen"
+        component={TranslationLanguageScreen}
+        options={{ title: 'Idiomas de Traducción' }}
       />
     </Stack.Navigator>
   );
